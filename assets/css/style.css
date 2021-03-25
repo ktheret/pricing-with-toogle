@@ -1,0 +1,455 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset perso */
+a,
+del,
+ins {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+}
+
+footer {
+  display: table-row;
+  height: 30px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-color: #f6f6fe;
+}
+
+header {
+  margin: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 2rem;
+}
+
+h3 {
+  margin: 1rem;
+  color: #6d708d;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 10px #b3b5c6;
+          box-shadow: 1px 1px 10px #b3b5c6;
+  border: none;
+}
+
+.dollar-sign {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.card-one,
+.card-three {
+  background: white;
+  color: #494c5f;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 18rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.card-one button,
+.card-three button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  color: white;
+}
+
+.card-one button:hover,
+.card-three button:hover {
+  background: none;
+  color: #696fdd;
+  border: 1px solid #696fdd;
+}
+
+@media (min-width: 768px) {
+  .card-one,
+  .card-three {
+    width: 19rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-one {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-three {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+.card-two {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  width: 18rem;
+  z-index: 2;
+}
+
+.card-two h3 {
+  color: white;
+}
+
+.card-two button {
+  background: white;
+  color: #696fdd;
+}
+
+.card-two button:hover {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+  .card-two {
+    padding-top: 2.5rem;
+  }
+}
+
+ul {
+  margin: 1rem 0rem;
+}
+
+li {
+  padding: 1rem;
+  border-top: 1px solid #b3b5c6;
+}
+
+li:last-child {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 38px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.toogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  width: 50px;
+  height: 24px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  margin: 0rem 1rem;
+  border-radius: 15px;
+  padding: 2px;
+}
+
+.toogle-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.15s;
+  transition: ease-in 0.15s;
+}
+
+.toogle-button:hover {
+  opacity: 0.8;
+}
+
+.monthly {
+  display: none;
+}
+
+.show-monthly .monthly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.show-monthly .annually {
+  display: none;
+}
+
+.show-monthly .toogle-button {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+
+.annual,
+.month {
+  cursor: pointer;
+}
+
+.bg-top {
+  position: fixed;
+  z-index: -1;
+  right: 0px;
+}
+
+@media (min-width: 768px) {
+  .bg-top {
+    position: absolute;
+  }
+  .bg-top img {
+    width: 100%;
+  }
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bg-bottom {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

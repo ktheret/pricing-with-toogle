@@ -1,0 +1,221 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   background-color: $vl-gray-blue;
+}
+
+header {
+   margin: 1rem;
+   text-align: center;
+}
+
+h1 {
+   font-size: 50px;
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h2 {
+   font-size: 24px;
+   margin: 2rem;
+}
+
+h3 {
+   margin: 1rem;
+   color: $gray-blue;
+}
+
+.cards {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   @include m {
+      flex-direction: row;
+   }
+}
+
+.card {
+   padding: 1.5rem;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 1px 1px 10px $l-gray-blue;
+   border: none;
+}
+
+.dollar-sign {
+   font-size: 30px;
+   margin: 5px;
+}
+
+.card-one,
+.card-three {
+   background: white;
+   color: $d-gray-blue;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+   width: 18rem;
+   padding-top: 1.5rem;
+   padding-bottom: 2rem;
+
+   button {
+      background: $gradient;
+      color: white;
+   }
+
+   button:hover {
+      background: none;
+      color: rgb(105, 111, 221);
+      border: 1px solid rgb(105, 111, 221);
+   }
+
+   @include m {
+      width: 19rem;
+      padding: 1rem 1.5rem;
+   }
+}
+
+.card-one {
+   @include m {
+      transform: translateX(5px);
+   }
+}
+
+.card-three {
+   @include m {
+      transform: translateX(-5px);
+   }
+}
+
+.card-two {
+   background: $gradient;
+   color: white;
+   padding-top: 1.5rem;
+   padding-bottom: 2rem;
+   width: 18rem;
+   z-index: 2;
+
+   h3 {
+      color: white;
+   }
+
+   button {
+      background: white;
+      color: rgb(105, 111, 221);
+   }
+
+   button:hover {
+      background: none;
+      color: white;
+      border: 1px solid white;
+   }
+
+   @include m {
+      padding-top: 2.5rem;
+   }
+}
+
+ul {
+   margin: 1rem 0rem;
+}
+
+li {
+   padding: 1rem;
+   border-top: 1px solid $l-gray-blue;
+}
+
+li:last-child {
+   border-bottom: 1px solid $l-gray-blue;
+}
+
+button {
+   text-transform: uppercase;
+   border: none;
+   margin-top: 0.5rem;
+   width: 100%;
+   height: 38px;
+   border-radius: 5px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12px;
+   letter-spacing: 1px;
+}
+.toogle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+
+.slider {
+   width: 50px;
+   height: 24px;
+   background: $gradient;
+   margin: 0rem 1rem;
+   border-radius: 15px;
+   padding: 2px;
+}
+
+.toogle-button {
+   height: 20px;
+   width: 20px;
+   border-radius: 1rem;
+   background: white;
+   cursor: pointer;
+   transition: ease-in 0.15s;
+}
+
+.toogle-button:hover {
+   opacity: 0.8;
+}
+
+.monthly {
+   display: none;
+}
+
+.show-monthly {
+   .monthly {
+      display: flex;
+   }
+
+   .annually {
+      display: none;
+   }
+
+   .toogle-button {
+      transform: translateX(25px);
+   }
+}
+
+.annual,
+.month {
+   cursor: pointer;
+}
+
+.bg-top {
+   position: fixed;
+   z-index: -1;
+   right: 0px;
+
+   @include m {
+      position: absolute;
+      img {
+         width: 100%;
+      }
+   }
+}
+
+.bg-bottom {
+   position: absolute;
+   bottom: 0px;
+   display: none;
+
+   @include m {
+      display: block;
+   }
+}

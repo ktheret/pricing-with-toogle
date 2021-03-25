@@ -1,0 +1,17 @@
+//Colors
+$gradient: linear-gradient(rgb(163, 168, 240), rgb(105, 111, 221));
+
+$vl-gray-blue: rgb(246, 246, 254);
+$l-gray-blue: rgb(179, 181, 198);
+$gray-blue: rgb(109, 112, 141);
+$d-gray-blue: rgb(73, 76, 95);
+
+//Responsive variables
+$mobile: 768px;
+
+// Small devices
+@mixin m {
+   @media (min-width: #{$mobile}) {
+      @content;
+   }
+}
